@@ -1,0 +1,66 @@
+question 2
+
+  A shopping app made with React Native shows a notification to users for product offers, as
+  shown in the image below:
+  Fill in the blanks below with appropriate code, so that the component will render with the
+  styling of the image above:
+
+
+ Answer:-
+
+
+     const companyBlue = &quot;#006fad&quot;;
+     const styles = StyleSheet.create({
+     container: {
+         borderWidth: 2,
+         borderColor: companyBlue,
+         borderRadius: 5,
+         padding: 10,
+     },
+    title: {
+        fontWeight: "bold",
+        fontSize: 20
+    },
+    subtitle: {
+      fontStyle: "italic"
+    },
+    primary: {
+      color: companyBlue
+    }
+ });
+
+const Notification = ({title, description}) =>; {
+return (
+<View style={styles.container}>;
+<Text style={[styles.title, styles.primary]}>{title}</Text>;
+<Text style={[styles.subtitle, styles.primary]}>{description}</Text>
+</View>
+);
+};
+
+
+Question 1
+         
+     Consider the following React Native components:
+     const SecurityContext = React.createContext({ username: &quot;&quot;, permissions: [] });
+     const ControlsComponent = (props) => {
+        return (
+             <SecurityContext.Provider value={{ username: props.username }}>
+                <LogoutWrapper></LogoutWrapper>
+             </SecurityContext.Provider>
+         );
+      };
+      const LogoutWrapper = (props) =&gt; {
+        var context = React.useContext(SecurityContext);
+          return ( 
+              <View>
+              <Text&gt;{context.username}>/Text>
+              <Button>Click here to logout></Button>
+              </Text>
+          );
+       };
+Select all the correct statements if ControlsComponent is rendered with
+the username prop equal to "James"
+
+
+Answer :- This Question is incomplete.There are no possibilities for selection.
